@@ -214,74 +214,7 @@ export default function Post() {
   );
 }
 
-const renderPost = () => {
-  return (
-    <View style={styles.postContainer}>
-      <View style={styles.top}>
-        <View style={styles.left}>
-          <View style={styles.profile}>
-            <Image source={require('../images/profile.png')} />
-          </View>
-          <View>
-            <Text style={[styles.userName, styles.bold]}>joshua_l</Text>
-            <Text style={styles.location}>Tokyo, Japan</Text>
-          </View>
-        </View>
-        <View style={styles.right}>
-          <Image source={require('../images/Shape.jpg')} />
-        </View>
-      </View>
-      <View>
-        <Image
-          source={require('../images/post.png')}
-          style={styles.mainImage}
-        />
-      </View>
 
-      <View style={styles.bottom}>
-        <View style={styles.iconContainer}>
-          <View style={styles.icons}>
-            <Image
-              source={require('../images/Shape-2.png')}
-              style={styles.icon}
-            />
-            <Image
-              source={require('../images/Shape-1.png')}
-              style={[styles.icon, styles.jugad]}
-            />
-            <Image
-              source={require('../images/Sent.png')}
-              style={[styles.icon, styles.jugad]}
-            />
-          </View>
-          <Image
-            source={require('../images/Shape-3.png')}
-            style={styles.icon}
-          />
-        </View>
-        <View style={styles.captionContainer}>
-          <View style={styles.lineOne}>
-            <Image
-              source={require('../images/profile.png')}
-              style={styles.captionIcon}
-            />
-            <Text style={styles.likesText}>Liked by </Text>
-            <Text style={[styles.userName, styles.bold]}>craig_love</Text>
-            <Text style={styles.likesText}> and </Text>
-            <Text style={[styles.userName, styles.bold]}>44,565 others</Text>
-          </View>
-          <View style={styles.lineTwo}>
-            <Text style={styles.captionText}>
-              {' '}
-              <Text style={[styles.userName, styles.bold]}>joshua_l </Text>
-              The game in Japan was amazing, and I want to share some photos.
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  );
-};
 
 const Footer = () => {
   return (
